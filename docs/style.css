@@ -59,6 +59,7 @@ header{
 
     display: flex;
     padding: 3% 7%;
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;
 
@@ -107,6 +108,7 @@ main{
 
     display: flex;
     padding: 3% 7%;
+    overflow: hidden;
     align-items: center;
     justify-content: space-between;
 
@@ -188,6 +190,7 @@ footer{
     top: 1%;
     padding: 0 7%;
     display: flex;
+    overflow: hidden;
     position: relative;
     align-items: center;
     justify-content: space-between;
@@ -227,3 +230,55 @@ footer ul li:hover{
 
 }
 
+@media(max-width:768px){
+
+    main{
+
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        
+    }
+
+    .button_download{
+
+        padding: 0;
+        display: flex;
+
+    }
+    
+    .img-ebook-main{
+
+        padding-left: 0;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+
+    }
+
+    footer{
+
+        top: 10%;
+        flex-direction: column;
+
+    }
+
+    footer p{
+
+        font-size: 12px;
+
+    }
+
+    footer ul{
+
+        gap: 10px;
+
+    }
+
+    footer ul li{
+
+        font-size: 16px;
+
+    }
+
+}
